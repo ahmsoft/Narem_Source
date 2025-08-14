@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NaremDB" Class="LinqDBClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=NaremDB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="NaremDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="ariyasof_user.ToEmploy" Member="ToEmploys">
+    <Type Name="ToEmploy">
+      <Column Name="IDTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Family" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Intresting" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Skills" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="GradeEdu" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="FieldOfStudy" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ForJob" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Married" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LanguageSkills" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Certificate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.About" Member="Abouts">
+    <Type Name="About">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDManager" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="AboutSite_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="AboutSite_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BiographyPic" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address_Fa" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address_En" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Tele" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telegram" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Googleplus" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Linkedin" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WorkingHours_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WorkingHours_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BodyContact_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BodyContact_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Authority" Member="Authorities">
+    <Type Name="Authority">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Block" Member="Blocks">
+    <Type Name="Block">
+      <Column Name="IDB" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categorys" Member="Categories">
+    <Type Name="Category">
+      <Column Name="IDCat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CatName_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CatName_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comments" Member="Comments">
+    <Type Name="Comment">
+      <Column Name="IDC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameAndFamily_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameAndFamily_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="WebSite" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MSG_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MSG_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Seen" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Access" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IDElement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Action" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactUs" Member="ContactUs">
+    <Type Name="ContactUs">
+      <Column Name="IDCU" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameAndFamily_Fa" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="NameAndFamily_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="WebSite" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="MSG_Fa" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="MSG_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Seen" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contract" Member="Contracts">
+    <Type Name="Contract">
+      <Column Name="IDCon" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Contract" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Covers" Member="Covers">
+    <Type Name="Cover">
+      <Column Name="IDCover" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Title_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Location_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Location_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FAQm" Member="FAQms">
+    <Type Name="FAQm">
+      <Column Name="IDF" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Question_Fa" Type="System.String" DbType="NVarChar(800) NOT NULL" CanBeNull="false" />
+      <Column Name="Question_En" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="Answer_Fa" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="Answer_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AnswerBy_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AnswerBy_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AskedBy_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AskedBy_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Seen" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CatName_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CatName_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FaultLog" Member="FaultLogs">
+    <Type Name="FaultLog">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageName" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorMessage" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gallery" Member="Galleries">
+    <Type Name="Gallery">
+      <Column Name="IDG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Location_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Location_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="PicName" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link" Member="Links">
+    <Type Name="Link">
+      <Column Name="IDL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Address_Fa" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Address_En" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Alt_Fa" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Alt_En" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="IDB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsHTML" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BodyHTML_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BodyHTML_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MegaMenu" Member="MegaMenus">
+    <Type Name="MegaMenu">
+      <Column Name="IDMM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDSM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Href" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Content_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Content_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Menu" Member="Menus">
+    <Type Name="Menu">
+      <Column Name="IDM" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Alt_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Alt_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Href" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDSM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HasSub" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MegaMenu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Message" Member="Messages">
+    <Type Name="Message">
+      <Column Name="IDMessage" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Title_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PreMessage_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Message_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PreMessage_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Message_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="WrittenBy_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WrittenBy_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CatName_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CatName_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.News1" Member="News1s">
+    <Type Name="News1">
+      <Column Name="IDN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Title_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PreMSG_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MSG_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PreMSG_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="MSG_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Access" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Pic" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WrittenBy_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WrittenBy_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CatName_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CatName_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsLetter" Member="NewsLetters">
+    <Type Name="NewsLetter">
+      <Column Name="IDNL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsLatin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="IDO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameAndFamily" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Job" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NewDesign" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SiteNameFA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SiteNameEn" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SiteSubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Customers" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Competition" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Service" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="DeadLine" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SuggestedCosts" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SampleSite" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="Requirements" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="PurposeExistingSite" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="Possibilities" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Style" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="Thesis" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Advice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ActiveForClient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SPL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Page" Member="Pages">
+    <Type Name="Page">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PageTitle_Fa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PageTitle_En" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Body_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Body_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WrittenBy_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WrittenBy_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Portfolio" Member="Portfolios">
+    <Type Name="Portfolio">
+      <Column Name="IDP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Title_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Href" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="MetaDescription_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MetaDescription_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CatName_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CatName_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PortfolioCat" Member="PortfolioCats">
+    <Type Name="PortfolioCat">
+      <Column Name="IDPC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CatName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataFilter" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PortfolioGallery" Member="PortfolioGalleries">
+    <Type Name="PortfolioGallery">
+      <Column Name="IDPG" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SRC" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Alt_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Alt_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="IDP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CatName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Brand" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Rank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="IDCat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KeyWord" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="Pic" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sales" Member="Sales">
+    <Type Name="Sale">
+      <Column Name="IDS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DateAndTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Map" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Servises" Member="Servises">
+    <Type Name="Servise">
+      <Column Name="IDS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Authority" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Type_Fa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Location_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DBase_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Deployment_Fa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NameServer1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NameServer2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IPtoBank" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Trafic" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OneYearPrice_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TwoYearPercent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ThreeYearPercent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentBuy_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentExp_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentBrn_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Instructions_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Type_En" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Location_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DBase_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Deployment_En" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OneYearPrice_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentBuy_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentExp_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MomentBrn_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Instructions_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Setting" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="IDS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameSettings" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="NameBrand_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameBrand_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameCorporation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameCorporation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameSite_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameSite_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TitleSite_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TitleSite_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address1_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address2_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address1_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Address2_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEL2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Subject_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Subject_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Keywords_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Keywords_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Memo_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Memo_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Telegram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WhatsApp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Googleplus" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Linkedin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Description_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="CreateYear_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateYear_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateMonth_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateMonth_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDay_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDay_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CopyWrite_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CopyWrite_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="LogoImageMini" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="LogoImageMax" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="AvatarImage" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="SpecialOffers_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="SpecialOffers_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="EmailCo" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="EmailSupport" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="About_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="About_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Slogan_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Slogan_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WorkingHours_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="WorkingHours_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Terms_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Terms_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PrivacyPolicy_Fa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PrivacyPolicy_En" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SafePay_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="SafePay_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SoldProducts" Member="SoldProducts">
+    <Type Name="SoldProduct">
+      <Column Name="IDSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalPrice" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Task" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="IDT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TaskName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="AmountReceived" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Benefit" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="IDU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IsSupervisor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Authoritys" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Family_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Family_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BirthYear_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthMonth_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthDay_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthYear_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthMonth_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthDay_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthdayLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BirthdayLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LiveLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LiveLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Mobile1" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Mobile2" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Address1_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address2_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address1_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address2_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telegram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WhatsApp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Linkedin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Googleplus" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PhotoMin" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="PhotoMax" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ResumeFile" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="About_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="About_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Job_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Job_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BioEdu_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BioEdu_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Evidence_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Evidence_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="GraduationLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GraduationLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GraduationDate_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GraduationDate_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Intrests_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Intrests_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="State_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="State_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BioJob_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BioJob_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Memo_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Memo_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsersOnlineDetails" Member="UsersOnlineDetails">
+    <Type Name="UsersOnlineDetail">
+      <Column Name="IDOnline" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MachinName" Type="System.String" DbType="NVarChar(90)" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Browser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Platform" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateAndTime" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Page" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Visitor" Member="Visitors">
+    <Type Name="Visitor">
+      <Column Name="IDV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AllVisitor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Today" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Client" Member="Clients">
+    <Type Name="Client">
+      <Column Name="IDClient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IDO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student" Member="Students">
+    <Type Name="Student">
+      <Column Name="IDS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDNo" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IsSupervisor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Authoritys" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Name_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Name_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Family_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Family_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BirthYear_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthMonth_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthDay_Fa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthYear_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthMonth_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthDay_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BirthdayLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BirthdayLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LiveLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LiveLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Mobile1" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Mobile2" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Address1_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address2_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address1_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Address2_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telegram" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WhatsApp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Linkedin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Googleplus" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PhotoMin" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="PhotoMax" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Biography_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ResumeFile" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="About_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="About_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Job_Fa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Job_En" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BioEdu_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BioEdu_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Evidence_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Evidence_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="GraduationLocation_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GraduationLocation_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GraduationDate_Fa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GraduationDate_En" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Intrests_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Intrests_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="State_Fa" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="State_En" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BioJob_Fa" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="BioJob_En" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Memo_Fa" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Memo_En" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Keyword_Fa" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Column Name="Keyword_En" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StdMessage" Member="StdMessages">
+    <Type Name="StdMessage">
+      <Column Name="IDMStd" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="NameAndFamily" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MSG" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Moment_Fa" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Moment_En" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Year_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Month_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Day_En" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Seen" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
