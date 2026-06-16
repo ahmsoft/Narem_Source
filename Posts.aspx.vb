@@ -113,12 +113,15 @@ Partial Class Posts
             For Each b In CAT
                 'lblCat.ToolTip = b.CatName_Fa
                 Try
-                    If b.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ") Then
-                        ltrCat.Text += "<li><a style='color:White;background-color:#7baa00;padding-left:5px;padding-right:5px;border-radius:5px;font-size:15px;' href='/posts/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
-                    Else
+                    If (Page.RouteData.Values("CatName") <> Nothing) Then
+                        If b.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ") Then
+                            ltrCat.Text += "<li><a style='color:White;background-color:#7baa00;padding-left:5px;padding-right:5px;border-radius:5px;font-size:15px;' href='/posts/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
+                        Else
 
-                        ltrCat.Text += "<li><a href='/posts/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
+                            ltrCat.Text += "<li><a href='/posts/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
+                        End If
                     End If
+
                 Catch ex As Exception
                     ltrCat.Text += "<li><a href='/posts/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
                 End Try
@@ -164,17 +167,20 @@ Partial Class Posts
         lblRootPageHref.InnerText = "آرشیو مطالب سایت"
         lblRootPageHref.HRef = "/posts/all/"
         Try
-            If Page.RouteData.Values("CatName").ToString() = "" Then
-                lblCurrentPage.Text = "همه"
-            Else
-                Dim CAT = From m In db.Categories
-                          Select m Where m.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ")
+            If Page.RouteData.Values("CatName") <> Nothing Then
+                If Page.RouteData.Values("CatName").ToString() = "" Then
+                    lblCurrentPage.Text = "همه"
+                Else
+                    Dim CAT = From m In db.Categories
+                              Select m Where m.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ")
 
-                For Each b In CAT
-                    'lblCat.ToolTip = b.CatName_Fa
-                    lblCurrentPage.Text = b.CatName_Fa
-                Next
+                    For Each b In CAT
+                        'lblCat.ToolTip = b.CatName_Fa
+                        lblCurrentPage.Text = b.CatName_Fa
+                    Next
+                End If
             End If
+
         Catch ex As Exception
             lblCurrentPage.Text = "همه"
         End Try

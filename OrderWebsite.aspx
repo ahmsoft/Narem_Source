@@ -3,6 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <asp:Literal runat="server" ID="litMeta" />
     <style>
+
+        @media (max-width: 1400px) {
+            #OrderForm {
+                width: 100%;
+                height: 1350px;
+            }
+        }
+
+
         @media (max-width: 1382px) {
             #OrderForm {
                 width: 100%;
@@ -97,7 +106,7 @@
         window.CRISP_WEBSITE_ID = "55e2eb86-5fb2-47b6-84bb-ddce6f1188a6"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();
     </script>
     <!---end Crisp code--->
-    <iframe id="OrderForm" src="https://narem.ir/OrderSite.aspx" style="border: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" title="description"></iframe>
+    <iframe id="OrderForm" src="https://narem.ir/OrderSite.aspx" style="border: none; width:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" title="description"></iframe>
 
     <script>
         function setIframeHeight(iframe) {
