@@ -115,8 +115,11 @@ Partial Class PostView
                 Else
                     IAction = Page.RouteData.Values("Action").ToString.Replace("-", " ")
                 End If
-                If b.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ") Then
-                    ltrCat.Text += "<li><a style='color:White;background-color:#7baa00;padding-left:5px;padding-right:5px;border-radius:5px;font-size:15px;' href='../../../../" + IAction + "/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
+                If (Page.RouteData.Values("CatName") <> Nothing) Then
+                    If (b.CatName_En.ToLower() = Page.RouteData.Values("CatName").ToString.Replace("-", " ")) Then
+                        ltrCat.Text += "<li><a style='color:White;background-color:#7baa00;padding-left:5px;padding-right:5px;border-radius:5px;font-size:15px;' href='../../../../" + IAction + "/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"
+                    End If
+
                 Else
 
                     ltrCat.Text += "<li><a href='../../../../" + IAction + "/" + b.CatName_En.ToString.Replace(" ", "-").ToLower() + "/' title='" + b.Description_Fa + "'>" + b.CatName_Fa + "</a></li>"

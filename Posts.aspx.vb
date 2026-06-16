@@ -17,9 +17,12 @@ Partial Class Posts
         Dim MetaArticelSection As String = "<meta property='og:article:section' content='مقالات' />"
         litMeta.Text = MetaIMG + MetaTitle + MetaDesc + MetaNameSite + MetaBrand + MetaUrl + MetaLocal + MetaAuthor + MetaArticelSection
         Try
-            If (Page.RouteData.Values("Search").ToString.Replace("-", " ") IsNot Nothing) Or (Page.RouteData.Values("Search").ToString.Replace("-", " ") <> "") Then
-                Response.Redirect("/result/" + Page.RouteData.Values("Search").ToString.Replace("-", " "))
+            If (Page.RouteData.Values("Search") <> Nothing) Then
+                If (Page.RouteData.Values("Search").ToString.Replace("-", " ") IsNot Nothing) Or (Page.RouteData.Values("Search").ToString.Replace("-", " ") <> "") Then
+                    Response.Redirect("/result/" + Page.RouteData.Values("Search").ToString.Replace("-", " "))
+                End If
             End If
+
         Catch ex As Exception
 
         End Try
